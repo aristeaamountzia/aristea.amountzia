@@ -1,4 +1,6 @@
+# Writing the combined HTML, CSS, and JS content into a single file
 
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,3 +104,10 @@
     </script>
 </body>
 </html>
+"""
+
+# Save to an HTML file
+with open("/mnt/data/portfolio.html", "w") as file:
+    file.write(html_content)
+
+"/mnt/data/portfolio.html"
